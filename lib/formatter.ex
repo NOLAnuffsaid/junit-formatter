@@ -117,7 +117,7 @@ defmodule JUnitFormatter do
 
   @doc "Formats time from nanos to seconds"
   @spec format_time(integer) :: binary
-  def format_time(time), do: '~.4f' |> :io_lib.format([time / 1_000_000]) |> List.to_string()
+  def format_time(time), do: '~.3f' |> :io_lib.format([time / 1_000_000]) |> List.to_string()
 
   @doc """
   Helper function to get the full path of the generated report file.

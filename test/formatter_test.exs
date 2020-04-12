@@ -266,11 +266,11 @@ defmodule FormatterTest do
 
   describe "format_time/1" do
     test "it can format time" do
-      assert JUnitFormatter.format_time(1_000_000) == "1.0000"
-      assert JUnitFormatter.format_time(10_000) == "0.0100"
-      assert JUnitFormatter.format_time(20_000) == "0.0200"
-      assert JUnitFormatter.format_time(110_000) == "0.1100"
-      assert JUnitFormatter.format_time(1_100_000) == "1.1000"
+      assert JUnitFormatter.format_time(1_000_000) == "1.000"
+      assert JUnitFormatter.format_time(10_000) == "0.010"
+      assert JUnitFormatter.format_time(20_000) == "0.020"
+      assert JUnitFormatter.format_time(110_000) == "0.110"
+      assert JUnitFormatter.format_time(1_100_000) == "1.100"
     end
   end
 
